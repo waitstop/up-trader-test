@@ -1,0 +1,13 @@
+.label-component {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+
+  & input {
+    border-radius: .25rem;
+    border: 2px solid rgb(var(--accent));
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+  }
+}

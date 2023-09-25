@@ -1,0 +1,50 @@
+.projects {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    h2{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    border: 2px solid rgba(var(--accent), 1);
+    border-radius: .5rem;
+    padding: 1rem;
+    background: rgb(var(--secondary));
+    transition: color 0.2s ease;
+    &:hover{
+      border: 2px solid rgba(var(--accent),0.8);
+      color: rgba(var(--text),0.8);
+    }
+    & button {
+      background-color: rgb(var(--warn));
+      border-radius: 100%;
+      aspect-ratio: 1/1;
+      width: 24px;
+      line-height: 0;
+      color: rgb(var(--background))
+    }
+  }
+  &__create {
+    label{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    button{
+      width: 100%;
+    }
+  }
+}
+.tasks__create-modal {
+  & label{
+    margin-bottom: .5rem;
+  }
+  & button{
+    margin-top: .5rem;
+    width: 100%;
+  }
+}

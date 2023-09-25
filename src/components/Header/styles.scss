@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 2rem;
+  height: 50px;
+  color: rgb(var(--background));
+  background: rgb(var(--accent));
+}
+header a{
+  transition: color 0.2s ease;
+  &:hover{
+    color: rgb(var(--secondary));
+  }
+}
